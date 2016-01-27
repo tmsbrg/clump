@@ -6,7 +6,7 @@
 import random
 
 # settings
-w = 15 # width of world
+w = 25 # width of world
 h = 21 # height of world
 trees = 75 # number of trees in forest. If more than num of tiles in world, rest is ignored
 clumping_factor = 1.5 # higher: more round and regular terrain, lower: more irregular terrain. should be > 0.0
@@ -81,4 +81,4 @@ for tree in range(1, trees):
 
 # print map
 for y in range(h):
-    print(_map[y])
+    print(" ".join(_map[y]))
